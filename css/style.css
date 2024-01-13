@@ -200,7 +200,15 @@ nav li {
     .teams-content p{
         text-align: center;
     }
+    .teams-buttom{
+        text-align: center;
+    }
+    .teams-img-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     
+    }
     
 }
 
@@ -250,5 +258,9 @@ nav li {
         cursor: pointer;
         
     }
+    .teams-buttom{
+        text-align: center;
+    }
+    
 
 }
