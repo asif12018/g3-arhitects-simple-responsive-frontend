@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*=======default css==========*/
-body {
+*{
     font-family: "Work Sans", sans-serif;
     margin: 0;
     padding: 0;
@@ -22,6 +22,18 @@ body {
 main {
     max-width: 1440px;
     margin: 50px auto;
+}
+
+.third-header {
+    color: var(--Dark-01, #131313);
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.description{
+    color: var(--Dark-03, #727272);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
 }
 
 
@@ -109,7 +121,8 @@ nav li {
     gap: 1.5rem;
 
 }
-.teams-img-container img{
+
+.teams-img-container img {
     width: 100%;
 }
 
@@ -141,9 +154,53 @@ nav li {
     line-height: 26px;
 }
 
-/* .teams-img-container img{
-    width: 100%;
-} */
+/*=========feature section start from here=========*/
+
+/*=====facts section start from here=====*/
+.facts{
+    margin: 80px 0;
+}
+.facts-card-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+.facts-card-container .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 35px;
+}
+
+.facts-card-container .card .card-stats {
+    font-size: 2.8rem;
+    color: var(--Dark-02, #424242);
+    margin: 10px 0;
+  
+}
+
+.facts-card-container .card .card-title {
+    color: var(--Dark-03, #727272);
+    font-size: 1.25rem;
+    font-weight: 600;
+    
+}
+.facts >h3{
+    margin-bottom: 24px;
+}
+/*====== sponsored sections start from here =====*/
+.sponsored-section{
+    text-align: center;
+}
+.sponsors-img-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+
+
 
 /*=========*/
 
@@ -187,29 +244,55 @@ nav li {
     }
 
     /*---- teams responsive css ----*/
-    .teams-container{
+    .teams-container {
         flex-direction: column;
-        padding: 0 10px ;
+        padding: 0 10px;
         align-items: center;
-     
+
     }
-    .teams-content h3{
+
+    .teams-content h3 {
         font-size: 2rem;
         text-align: center;
     }
-    .teams-content p{
+
+    .teams-content p {
         text-align: center;
     }
-    .teams-buttom{
+
+    .teams-buttom {
         text-align: center;
     }
+
     .teams-img-container {
         display: grid;
         grid-template-columns: 1fr;
         gap: 1.5rem;
-    
+
+    }
+    /*======facts responsive start from here====*/
+    .facts-card-container{
+        flex-direction: column;
+        padding: 0 30px;
+        gap: 20px;
+    }
+    .facts .facts-content{
+        text-align: center;
+    }
+
+    /*===Our sponspors====*/
+    .sponsors-img-container{
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+
+    }
+    .sponsors-img-container img{
+        width: 165px;
+      
     }
     
+
 }
 
 @media screen and (min-width: 575px) and (max-width:960px) {
@@ -236,17 +319,20 @@ nav li {
         font-weight: 600;
         font-size: 1.25rem;
         cursor: pointer;
-        
+
     }
+
     /*---- teams responsive css ----*/
-    .teams-container{
+    .teams-container {
         flex-direction: column;
-        padding: 0 10px ;
+        padding: 0 10px;
     }
-    .teams-content h3{
+
+    .teams-content h3 {
         font-size: 2rem;
         text-align: center;
     }
+
     .btn-primary {
         padding: 10px 12px;
         border-radius: 6px;
@@ -256,11 +342,34 @@ nav li {
         font-weight: 600;
         font-size: 1.25rem;
         cursor: pointer;
-        
+
     }
-    .teams-buttom{
+
+    .teams-buttom {
         text-align: center;
     }
-    
+
+     /*======facts responsive start from here====*/
+     .facts-card-container{
+        flex-direction: column;
+        padding: 0 50px;
+        gap: 20px;
+        
+    }
+    .facts .facts-content{
+        text-align: center;
+    }
+
+    /*===Our sponspors====*/
+    .sponsors-img-container{
+        flex-direction: column;
+        gap: 50px;
+
+    }
+    .sponsors-img-container img{
+        width: 165px;
+        align-items: center;
+    }
+
 
 }
