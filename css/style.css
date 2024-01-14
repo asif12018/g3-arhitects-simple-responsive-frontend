@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*=======default css==========*/
-*{
+* {
     font-family: "Work Sans", sans-serif;
     margin: 0;
     padding: 0;
@@ -29,7 +29,8 @@ main {
     font-size: 2.8rem;
     font-weight: 700;
 }
-.description{
+
+.description {
     color: var(--Dark-03, #727272);
     font-size: 1rem;
     font-weight: 400;
@@ -156,10 +157,61 @@ nav li {
 
 /*=========feature section start from here=========*/
 
+.features {
+    display: flex;
+    margin-top: 100px;
+}
+.features .section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.features .feature-content .description{
+    margin: 24px 0;
+}
+.feature-content{
+    margin-right: 80px;
+}
+
+.feature-content .card {
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.ten-years-badge{
+    border-radius: 8px;
+    background: #FF900E;
+    color: white;
+    width: 342px;
+}
+.ten-years-badge h2{
+    font-size: 3rem;
+}
+.ten-years-content{
+    padding: 40px;
+    text-align: center;
+}
+.ten-years-content p{
+    font-size: 1.5rem;
+}
+.feature-img{
+    position: relative;
+}
+.feature-img img{
+    height: 90%;
+}
+.ten-years-badge{
+    position: absolute;
+    bottom: 50px;
+    left: -45px;
+}
+
 /*=====facts section start from here=====*/
-.facts{
+.facts {
     margin: 80px 0;
 }
+
 .facts-card-container {
     display: flex;
     justify-content: space-around;
@@ -177,23 +229,26 @@ nav li {
     font-size: 2.8rem;
     color: var(--Dark-02, #424242);
     margin: 10px 0;
-  
+
 }
 
 .facts-card-container .card .card-title {
     color: var(--Dark-03, #727272);
     font-size: 1.25rem;
     font-weight: 600;
-    
+
 }
-.facts >h3{
+
+.facts>h3 {
     margin-bottom: 24px;
 }
+
 /*====== sponsored sections start from here =====*/
-.sponsored-section{
+.sponsored-section {
     text-align: center;
 }
-.sponsors-img-container{
+
+.sponsors-img-container {
     display: flex;
     justify-content: space-evenly;
     margin-top: 50px;
@@ -270,28 +325,55 @@ nav li {
         gap: 1.5rem;
 
     }
+
     /*======facts responsive start from here====*/
-    .facts-card-container{
+    .facts-card-container {
         flex-direction: column;
         padding: 0 30px;
         gap: 20px;
     }
-    .facts .facts-content{
+
+    .facts .facts-content {
         text-align: center;
     }
 
     /*===Our sponspors====*/
-    .sponsors-img-container{
+    .sponsors-img-container {
         flex-direction: column;
         gap: 50px;
         align-items: center;
 
     }
-    .sponsors-img-container img{
+
+    .sponsors-img-container img {
         width: 165px;
-      
     }
     
+    /*====feature responsive===*/
+    .features{
+        flex-direction: column;
+    }
+    .feature-content{
+        margin-right: 0;
+    }
+    .feature-img img{
+        height: auto;
+        width: 100%;
+    }
+    .ten-years-badge{
+        width: 240px;
+    }
+    .ten-years-badge h2{
+        font-size: 2rem;
+    }
+    .ten-years-badge p{
+        font-size: 1rem;
+    }
+    .ten-years-badge{
+        bottom: -10%;
+        left:100px;
+    }
+
 
 }
 
@@ -349,26 +431,57 @@ nav li {
         text-align: center;
     }
 
-     /*======facts responsive start from here====*/
-     .facts-card-container{
+    /*===== features you will love & enjoy =====*/
+
+
+
+    /*======facts responsive start from here====*/
+    .facts-card-container {
         flex-direction: column;
         padding: 0 50px;
         gap: 20px;
-        
+
     }
-    .facts .facts-content{
+
+    .facts .facts-content {
         text-align: center;
     }
 
     /*===Our sponspors====*/
-    .sponsors-img-container{
+    .sponsors-img-container {
         flex-direction: column;
         gap: 50px;
 
     }
-    .sponsors-img-container img{
+
+    .sponsors-img-container img {
         width: 165px;
-        align-items: center;
+        margin: 0 auto;
+    }
+
+      /*====feature responsive===*/
+      .features{
+        flex-direction: column;
+    }
+    .feature-content{
+        margin-right: 0;
+    }
+    .feature-img img{
+        height: auto;
+        width: 100%;
+    }
+    .ten-years-badge{
+        width: 240px;
+    }
+    .ten-years-badge h2{
+        font-size: 2rem;
+    }
+    .ten-years-badge p{
+        font-size: 1rem;
+    }
+    .ten-years-badge{
+        bottom: -5%;
+        left: 40%;
     }
 
 
